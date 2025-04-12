@@ -1,25 +1,27 @@
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
+import { ApiError } from '../Interfaces/ApiResponse';
 
-const API_BASE_URL = 'https://localhost:7216/api'; // Ajusta el puerto según tu configuración de .NET
+const API_BASE_URL = 'https://localhost:7216/api';
 
 const axiosInstance = axios.create({
     baseURL: API_BASE_URL,
+    timeout: 10000,
     headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
     }
 });
 
-// Interceptor para manejar errores
 axiosInstance.interceptors.response.use(
     response => response,
-    error => {
+    (error: AxiosError<ApiError>) => {
         if (error.response) {
-            console.error('Error de API:', error.response.data);
-            // Aquí puedes manejar errores específicos de .NET
-            if (error.response.status === 400) {
-                console.error('Error de validación:', error.response.data.errors);
-            }
+            console.error('API Error:', {
+                status: error.response.status,
+                message: error.response.data?.message
+            });
+        } else if (error.request) {
+            console.error('Network Error:', error.message);
         }
         return Promise.reject(error);
     }
