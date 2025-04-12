@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "UcP4saoTI65Nu0uAfP88jWSe8lrhmGmmdCv286KXJhc=",
+  "Source": "UserAdmin.API",
+  "BasePath": "_content/UserAdmin.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,10 +1,12 @@
 export interface UserInterface {
-    id: number;
+    id?: number;
     primer_nombre: string;
-    segundo_nombre: string;
+    segundo_nombre?: string;
     primer_apellido: string;
-    segundo_apellido: string;
-    id_departamento: number;
+    segundo_apellido?: string;
+    email: string;
     id_cargo: number;
-    // Otros campos que necesites
+    id_departamento: number;
+    cargo?: string;
+    departamento?: string;
 }

@@ -1,31 +1,27 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import apiClient from "../../services/api";
-import { DepartamentoInterface } from "../../Interfaces/Departamento";
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import axiosInstance from '../../services/api';
+import { DepartamentoInterface } from '../../Interfaces/Departamento';
 
-// Thunks asíncronos para interactuar con la API (CRUD de Departamento)
-const fetchDepartamentos = createAsyncThunk('departamento/fetchDepartamentos', async () => {
-    const response = await apiClient.get('/departamento');
-    return response.data;
-});
+export const fetchDepartamentos = createAsyncThunk(
+    'departamentos/fetchDepartamentos',
+    async () => {
+        const response = await axiosInstance.get('/Departamento/GetAllDepartamentos');
+        return response.data;
+    }
+);
 
-const fetchDepartamentoById = createAsyncThunk('departamento/fetchDepartamentoById', async (id: number) => {
-    const response = await apiClient.get(`/departamento/${id}`);
-    return response.data;
-});
+export const createDepartamento = createAsyncThunk(
+    'departamentos/createDepartamento',
+    async (departamentoData: DepartamentoInterface) => {
+        const response = await axiosInstance.post('/Departamento/CreateDepartamento', departamentoData);
+        return response.data;
+    }
+);
 
-const createDepartamento = createAsyncThunk('departamento/createDepartamento', async (departamentoData: DepartamentoInterface) => {
-    const response = await apiClient.post('/departamento', departamentoData);
-    return response.data;
-});
-
-const updateDepartamento = createAsyncThunk('departamento/updateDepartamento', async ({ id, departamentoData }: { id: number; departamentoData: DepartamentoInterface }) => {
-    const response = await apiClient.put(`/departamento/${id}`, departamentoData);
-    return response.data;
-});
-
-const deleteDepartamento = createAsyncThunk('departamento/deleteDepartamento', async (id: number) => {
-    await apiClient.delete(`/departamento/${id}`);
-    return id;
-});
-
-export { fetchDepartamentos, fetchDepartamentoById, createDepartamento, updateDepartamento, deleteDepartamento };
+export const deleteDepartamento = createAsyncThunk(
+    'departamentos/deleteDepartamento',
+    async (id: number) => {
+        await axiosInstance.delete(`/Departamento/DeleteDepartamento/${id}`);
+        return id;
+    }
+);

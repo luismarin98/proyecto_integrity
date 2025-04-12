@@ -1,0 +1,12 @@
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\bin\Debug\net9.0\UserAdmin.Domain.deps.json
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\bin\Debug\net9.0\UserAdmin.Domain.dll
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\bin\Debug\net9.0\UserAdmin.Domain.pdb
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\obj\Debug\net9.0\UserAdmin.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\obj\Debug\net9.0\UserAdmin.Domain.AssemblyInfoInputs.cache
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\obj\Debug\net9.0\UserAdmin.Domain.AssemblyInfo.cs
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\obj\Debug\net9.0\UserAdmin.Domain.csproj.CoreCompileInputs.cache
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\obj\Debug\net9.0\UserAdmin.Domain.sourcelink.json
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\obj\Debug\net9.0\UserAdmin.Domain.dll
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\obj\Debug\net9.0\refint\UserAdmin.Domain.dll
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\obj\Debug\net9.0\UserAdmin.Domain.pdb
+C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Domain\obj\Debug\net9.0\ref\UserAdmin.Domain.dll
