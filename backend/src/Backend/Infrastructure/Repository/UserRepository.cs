@@ -24,6 +24,15 @@ public class UserRepository : IUser
     {
         try
         {
+            var departamento = await _dbContext.Departamento.FindAsync(userDTO.ID_Departamento);
+            var cargo = await _dbContext.Cargo.FindAsync(userDTO.ID_Cargo);
+
+            if (departamento == null || cargo == null)
+            {
+                _logger.LogWarning("ID_Cargo o ID_Departamento no existen en la base de datos.");
+                return false;
+            }
+
             UserModel user = new UserModel(userDTO.Id, userDTO.PrimerNombre, userDTO.SegundoNombre, userDTO.PrimerApellido, userDTO.SegundoApellido, userDTO.ID_Departamento, userDTO.ID_Cargo);
             await _dbContext.Categoria.AddAsync(user);
             await _dbContext.SaveChangesAsync();
