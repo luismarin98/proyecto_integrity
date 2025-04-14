@@ -8,8 +8,8 @@ namespace UserAdmin.Domain.Models;
 public class CargoModel
 {
     [Key][Column("id", TypeName = "int")] public int Id { get; set; }
-    [Column("nombre", TypeName = "varchar")] public string Nombre { get; set; } = string.Empty;
-    [Column("codigo", TypeName = "varchar")] public string Codigo { get; set; } = string.Empty;
+    [Column("nombre", TypeName = "varchar(50)")] public string Nombre { get; set; } = string.Empty;
+    [Column("codigo", TypeName = "varchar(50)")] public string Codigo { get; set; } = string.Empty;
     [Column("activo", TypeName = "bit")] public bool Activo { get; set; }
     [Column("id_usuario_creacion", TypeName = "int")] public int IdUsuarioCreacion { get; set; }
 

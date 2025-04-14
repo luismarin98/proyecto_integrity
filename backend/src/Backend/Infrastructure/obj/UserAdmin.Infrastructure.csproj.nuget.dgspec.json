@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Infrastructure\\UserAdmin.Infrastructure.csproj": {}
+    "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Infrastructure\\UserAdmin.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\UserAdmin.Application.csproj": {
+    "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\UserAdmin.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\UserAdmin.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\UserAdmin.Application.csproj",
         "projectName": "UserAdmin.Application",
-        "projectPath": "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\UserAdmin.Application.csproj",
-        "packagesPath": "C:\\Users\\LuisMarin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\obj\\",
+        "projectPath": "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\UserAdmin.Application.csproj",
+        "packagesPath": "C:\\Users\\Paul Marin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LuisMarin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Paul Marin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -26,8 +26,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\UserAdmin.Domain.csproj": {
-                "projectPath": "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\UserAdmin.Domain.csproj"
+              "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\UserAdmin.Domain.csproj": {
+                "projectPath": "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\UserAdmin.Domain.csproj"
               }
             }
           }
@@ -40,9 +40,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -63,21 +63,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\UserAdmin.Domain.csproj": {
+    "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\UserAdmin.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\UserAdmin.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\UserAdmin.Domain.csproj",
         "projectName": "UserAdmin.Domain",
-        "projectPath": "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\UserAdmin.Domain.csproj",
-        "packagesPath": "C:\\Users\\LuisMarin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\UserAdmin.Domain.csproj",
+        "packagesPath": "C:\\Users\\Paul Marin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LuisMarin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Paul Marin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -99,9 +99,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -122,21 +122,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Infrastructure\\UserAdmin.Infrastructure.csproj": {
+    "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Infrastructure\\UserAdmin.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Infrastructure\\UserAdmin.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Infrastructure\\UserAdmin.Infrastructure.csproj",
         "projectName": "UserAdmin.Infrastructure",
-        "projectPath": "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Infrastructure\\UserAdmin.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\LuisMarin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Infrastructure\\UserAdmin.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Paul Marin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LuisMarin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Paul Marin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -148,8 +148,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\UserAdmin.Application.csproj": {
-                "projectPath": "C:\\Users\\LuisMarin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\UserAdmin.Application.csproj"
+              "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\UserAdmin.Application.csproj": {
+                "projectPath": "C:\\Users\\Paul Marin\\Desktop\\proyecto_integrity\\backend\\src\\Backend\\Application\\UserAdmin.Application.csproj"
               }
             }
           }
@@ -162,9 +162,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -217,7 +217,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

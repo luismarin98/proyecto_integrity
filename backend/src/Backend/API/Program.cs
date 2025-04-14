@@ -15,10 +15,10 @@ builder.Services.AddInfrastructureServices(builder.Configuration);
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAllOrigins",
-        builder => builder.AllowAnyOrigin()
-            .AllowAnyMethod()
-            .AllowAnyHeader());
+    options.AddPolicy("AllowAllOrigins", policy =>
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader());
 });
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -43,5 +43,5 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 app.UseRouting();
-app.UseCors("MyCorsPolicy");
+app.UseCors("AllowAllOrigins");
 app.Run();

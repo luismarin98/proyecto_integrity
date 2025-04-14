@@ -1,12 +1,12 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { DepartamentoInterface } from "../../Interfaces/Departamento";
-import { initialState } from "./departamento.state";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { DepartamentoInterface } from '../../Interfaces/Departamento';
+import { initialState } from './departamento.state';
+import { fetchDepartamentos } from './departamento.thunk'; // Importa el thunk
 
 const departamentoSlice = createSlice({
-    name: "departamento",
+    name: 'departamento',
     initialState,
     reducers: {
-        // Reducers síncronos si necesitas
         setDepartamento(state, action: PayloadAction<DepartamentoInterface | null>) {
             state.departamento = action.payload;
         },
@@ -35,8 +35,25 @@ const departamentoSlice = createSlice({
                 state.lista_departamentos = [action.payload!];
             }
         }
+    },
+    extraReducers: (builder) => {
+        builder.addCase(fetchDepartamentos.pending, (state) => {
+            state.lista_departamentos = null; // Opcional: puedes manejar un estado de carga
+        });
+        builder.addCase(fetchDepartamentos.fulfilled, (state, action: PayloadAction<DepartamentoInterface[]>) => {
+            state.lista_departamentos = action.payload; // Actualiza la lista de departamentos con los datos obtenidos del API
+        });
+        builder.addCase(fetchDepartamentos.rejected, (state) => {
+            state.lista_departamentos = []; // Opcional: puedes manejar un estado de error
+        });
     }
 });
 
-export const { setDepartamento, clearDepartamento, updateDepartamentoInList, deleteDepartamentoFromList, addDepartamentoToList } = departamentoSlice.actions;
+export const { 
+    setDepartamento, 
+    clearDepartamento, 
+    updateDepartamentoInList, 
+    deleteDepartamentoFromList, 
+    addDepartamentoToList 
+} = departamentoSlice.actions;
 export default departamentoSlice.reducer;

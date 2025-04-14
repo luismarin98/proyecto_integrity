@@ -8,10 +8,10 @@ namespace UserAdmin.Domain.Models;
 public class UserModel
 {
     [Key][Column("id", TypeName = "int")] public int Id { get; set; }
-    [Column("primer_nombre", TypeName = "varchar")] public string PrimerNombre { get; set; } = string.Empty;
-    [Column("segundo_nombre", TypeName = "varchar")] public string SegundoNombre { get; set; } = string.Empty;
-    [Column("primer_apellido", TypeName = "varchar")] public string PrimerApellido { get; set; } = string.Empty;
-    [Column("segundo_apellido", TypeName = "varchar")] public string SegundoApellido { get; set; } = string.Empty;
+    [Column("primer_nombre", TypeName = "varchar(50)")] public string PrimerNombre { get; set; } = string.Empty;
+    [Column("segundo_nombre", TypeName = "varchar(50)")] public string SegundoNombre { get; set; } = string.Empty;
+    [Column("primer_apellido", TypeName = "varchar(50)")] public string PrimerApellido { get; set; } = string.Empty;
+    [Column("segundo_apellido", TypeName = "varchar(50)")] public string SegundoApellido { get; set; } = string.Empty;
     [Column("id_departamento", TypeName = "int")] public int ID_Departamento { get; set; }
     [Column("id_cargo", TypeName = "int")] public int ID_Cargo { get; set; }
 

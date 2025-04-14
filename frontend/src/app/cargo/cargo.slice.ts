@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { initialState } from './cargo.state';
 import { CargoInterface } from '../../Interfaces/Cargo';
+import { fetchCargos } from './cargo.thunk'; // Importa el thunk
 
 const cargoSlice = createSlice({
     name: 'cargos',
@@ -32,6 +33,17 @@ const cargoSlice = createSlice({
                 state.lista_cargos = [action.payload];
             }
         }
+    },
+    extraReducers: (builder) => {
+        builder.addCase(fetchCargos.pending, (state) => {
+            state.lista_cargos = null; // Opcional: puedes manejar un estado de carga
+        });
+        builder.addCase(fetchCargos.fulfilled, (state, action: PayloadAction<CargoInterface[]>) => {
+            state.lista_cargos = action.payload; // Actualiza la lista de cargos con los datos obtenidos del API
+        });
+        builder.addCase(fetchCargos.rejected, (state) => {
+            state.lista_cargos = []; // Opcional: puedes manejar un estado de error
+        });
     }
 });
 

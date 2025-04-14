@@ -14,3 +14,19 @@ C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Application\ob
 C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\refint\UserAdmin.Application.dll
 C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\UserAdmin.Application.pdb
 C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\ref\UserAdmin.Application.dll
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\bin\Debug\net9.0\UserAdmin.Application.deps.json
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\bin\Debug\net9.0\UserAdmin.Application.dll
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\bin\Debug\net9.0\UserAdmin.Application.pdb
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\bin\Debug\net9.0\UserAdmin.Domain.dll
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\bin\Debug\net9.0\UserAdmin.Domain.pdb
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\UserAdmin.Application.csproj.AssemblyReference.cache
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\UserAdmin.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\UserAdmin.Application.AssemblyInfoInputs.cache
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\UserAdmin.Application.AssemblyInfo.cs
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\UserAdmin.Application.csproj.CoreCompileInputs.cache
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\UserAdmin.Application.sourcelink.json
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\UserAdmi.3AFFE517.Up2Date
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\UserAdmin.Application.dll
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\refint\UserAdmin.Application.dll
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\UserAdmin.Application.pdb
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Application\obj\Debug\net9.0\ref\UserAdmin.Application.dll

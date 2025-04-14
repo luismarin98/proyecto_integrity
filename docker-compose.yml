@@ -1,17 +1,17 @@
 version: '3.8'
 
 services:
-
   frontend:
-      build:
-        context: ./frontend
-        dockerfile: Dockerfile
-      ports:
-        - "3000:80"
-      depends_on:
-        - api
-      networks:
-        - app-network
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+    networks:
+      - app-network
+
   api:
     build:
       context: ./backend
@@ -33,20 +33,9 @@ services:
       - MSSQL_SA_PASSWORD=YourStrong@Passw0rd
     ports:
       - "1433:1433"
-    volumes:
-      - sqlserver_data:/var/opt/mssql
     networks:
       - app-network
 
 networks:
   app-network:
     driver: bridge
-
-volumes:
-  sqlserver_data:
-    driver: local
-    driver_opts:
-      type: none
-      device: ${PWD}/sqlserver_data
-      o: bind
-  # Replace /path/to/your/local/sqlserver_data with the actual path on your host machine where you want to store the SQL Server data.

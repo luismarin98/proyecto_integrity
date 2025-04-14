@@ -4,24 +4,12 @@ import { DepartamentoInterface } from '../../Interfaces/Departamento';
 
 export const fetchDepartamentos = createAsyncThunk(
     'departamentos/fetchDepartamentos',
-    async () => {
-        const response = await axiosInstance.get('/Departamento/GetAllDepartamentos');
-        return response.data;
-    }
-);
-
-export const createDepartamento = createAsyncThunk(
-    'departamentos/createDepartamento',
-    async (departamentoData: DepartamentoInterface) => {
-        const response = await axiosInstance.post('/Departamento/CreateDepartamento', departamentoData);
-        return response.data;
-    }
-);
-
-export const deleteDepartamento = createAsyncThunk(
-    'departamentos/deleteDepartamento',
-    async (id: number) => {
-        await axiosInstance.delete(`/Departamento/DeleteDepartamento/${id}`);
-        return id;
+    async (_, thunkAPI) => {
+        try {
+            const response = await axiosInstance.get<DepartamentoInterface[]>('/Departamento/GetAllDepartamentos');
+            return response.data;
+        } catch (error) {
+            return thunkAPI.rejectWithValue('Error al obtener los departamentos');
+        }
     }
 );

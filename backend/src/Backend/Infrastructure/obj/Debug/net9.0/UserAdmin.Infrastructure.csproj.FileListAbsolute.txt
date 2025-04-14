@@ -18,3 +18,23 @@ C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure
 C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmin.Infrastructure.pdb
 C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmin.Infrastructure.genruntimeconfig.cache
 C:\Users\LuisMarin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\ref\UserAdmin.Infrastructure.dll
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\bin\Debug\net9.0\UserAdmin.Infrastructure.deps.json
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\bin\Debug\net9.0\UserAdmin.Infrastructure.runtimeconfig.json
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\bin\Debug\net9.0\UserAdmin.Infrastructure.dll
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\bin\Debug\net9.0\UserAdmin.Infrastructure.pdb
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\bin\Debug\net9.0\UserAdmin.Application.dll
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\bin\Debug\net9.0\UserAdmin.Domain.dll
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\bin\Debug\net9.0\UserAdmin.Application.pdb
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\bin\Debug\net9.0\UserAdmin.Domain.pdb
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmin.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmin.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmin.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmin.Infrastructure.AssemblyInfo.cs
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmin.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmin.Infrastructure.sourcelink.json
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmi.E796178E.Up2Date
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmin.Infrastructure.dll
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\refint\UserAdmin.Infrastructure.dll
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmin.Infrastructure.pdb
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\UserAdmin.Infrastructure.genruntimeconfig.cache
+C:\Users\Paul Marin\Desktop\proyecto_integrity\backend\src\Backend\Infrastructure\obj\Debug\net9.0\ref\UserAdmin.Infrastructure.dll

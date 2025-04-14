@@ -1,25 +1,17 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
-# Copiar los archivos de proyecto y restaurar dependencias
-COPY ["src/Backend/API/API.csproj", "src/Backend/API/"]
-COPY ["src/Backend/Domain/Domain.csproj", "src/Backend/Domain/"]
-COPY ["src/Backend/Infrastructure/Infrastructure.csproj", "src/Backend/Infrastructure/"]
-RUN dotnet restore "src/Backend/API/API.csproj"
+COPY ["src/Backend/API/UserAdmin.API.csproj", "src/Backend/API/"]
+COPY ["src/Backend/Domain/UserAdmin.Domain.csproj", "src/Backend/Domain/"]
+COPY ["src/Backend/Application/UserAdmin.Application.csproj", "src/Backend/Application/"]
+COPY ["src/Backend/Infrastructure/UserAdmin.Infrastructure.csproj", "src/Backend/Infrastructure/"]
+RUN dotnet restore "src/Backend/API/UserAdmin.API.csproj"
 
-# Copiar el resto del código
 COPY . .
+RUN dotnet publish "src/Backend/API/UserAdmin.API.csproj" -c Release -o /app/publish
 
-# Publicar la aplicación
-RUN dotnet publish "src/Backend/API/API.csproj" -c Release -o /app/publish
-
-# Imagen final
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS final
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-
-# Exponer el puerto
-EXPOSE 80
-EXPOSE 443
-
-ENTRYPOINT ["dotnet", "API.dll"]
+ENTRYPOINT ["dotnet", "UserAdmin.API.dll"]
