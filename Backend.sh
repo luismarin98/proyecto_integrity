@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Verifica si se proporcionó un argumento para el nombre del proyecto
-PROJECT_NAME=${1:-UserAdmin}
+PROJECT_NAME=${1:-NewDDD_Proyect} # Nombre por defecto si no se proporciona uno
+# Puedes cambiar 'NewDDD_Proyect' por el nombre que desees para tu proyecto
 
 # 1. Crea una carpeta raíz para toda la solución (opcional pero recomendado)
 mkdir backend
@@ -71,3 +72,4 @@ rm src/Backend/API/WeatherForecast.cs
 # --- Fin ---
 echo "¡Estructura del proyecto Backend creada exitosamente!"
 echo "Ahora puedes abrir '$PROJECT_NAME.sln' con Visual Studio o seguir trabajando desde VS Code."
+
