@@ -243,6 +243,86 @@ El frontend utiliza Material-UI para un diseño consistente y responsivo. Se uti
 ## Resumen
 Este proyecto proporciona una solución full-stack para la gestión de usuarios, departamentos y cargos. El backend expone APIs RESTful para operaciones CRUD, mientras que el frontend ofrece una interfaz intuitiva para que los administradores gestionen los datos de manera eficiente.
 
+# Documentación para `Untitled-1.sh` y `docker-compose.yml`
+
+## Untitled-1.sh
+
+### Resumen
+Este script Bash automatiza la creación de una estructura de proyecto backend para una solución .NET. Configura una arquitectura limpia con capas separadas para API, Aplicación, Dominio e Infraestructura. Además, configura las dependencias del proyecto, agrega paquetes NuGet y prepara la solución para el desarrollo.
+
+### Acciones Realizadas
+1. Crea un directorio raíz para la solución backend.
+2. Inicializa un nuevo archivo de solución `.sln` de .NET.
+3. Crea una estructura de carpetas para una arquitectura limpia:
+    - `API`: Para el proyecto de la Web API.
+    - `Application`: Para la lógica de la aplicación y servicios.
+    - `Domain`: Para las entidades del dominio y reglas de negocio.
+    - `Infrastructure`: Para el acceso a la base de datos e integraciones externas.
+4. Genera proyectos .NET para cada capa utilizando `dotnet new`.
+5. Agrega los proyectos al archivo de solución.
+6. Establece referencias entre proyectos para definir las dependencias entre capas.
+7. Instala paquetes NuGet esenciales para Entity Framework Core, AutoMapper, Autenticación JWT y Swagger.
+8. Elimina archivos de ejemplo del template de la Web API.
+
+### Cómo Ejecutar
+1. Asegúrate de tener Bash instalado (por ejemplo, Git Bash en Windows o un terminal Linux).
+2. Haz que el script sea ejecutable:
+    ```bash
+    chmod +x Untitled-1.sh
+    ```
+3. Ejecuta el script, opcionalmente proporcionando un nombre de proyecto:
+    ```bash
+    ./Untitled-1.sh [NombreDelProyecto]
+    ```
+    Si no se proporciona un nombre de proyecto, el valor predeterminado será `UserAdmin`.
+
+4. Abre el archivo `.sln` generado en Visual Studio o Visual Studio Code para comenzar el desarrollo.
+
+---
+
+## docker-compose.yml
+
+### Resumen
+Este archivo Docker Compose define una aplicación multicontenedor con tres servicios: `frontend`, `api` y `db`. Configura un entorno de desarrollo para una aplicación full-stack, incluyendo un frontend en React, un backend en .NET y una base de datos SQL Server.
+
+### Acciones Realizadas
+1. **Servicio Frontend**:
+    - Construye la aplicación frontend desde el directorio `./frontend` utilizando un `Dockerfile`.
+    - Expone el frontend en el puerto `3000`.
+
+2. **Servicio API**:
+    - Construye la aplicación backend desde el directorio `./backend` utilizando un `Dockerfile`.
+    - Expone la API en el puerto `7216`.
+    - Configura variables de entorno para el desarrollo y la conexión a la base de datos.
+
+3. **Servicio Base de Datos**:
+    - Utiliza la imagen oficial de Docker para SQL Server 2022.
+    - Configura la base de datos con una contraseña segura y acepta el EULA.
+    - Expone la base de datos en el puerto `1433`.
+
+4. **Redes**:
+    - Todos los servicios están conectados a través de una red bridge personalizada (`app-network`).
+
+### Cómo Ejecutar
+1. Asegúrate de tener Docker y Docker Compose instalados en tu sistema.
+2. Navega al directorio que contiene el archivo `docker-compose.yml`.
+3. Ejecuta el siguiente comando para construir e iniciar los servicios:
+    ```bash
+    docker-compose up --build
+    ```
+4. Accede a los servicios:
+    - Frontend: `http://localhost:3000`
+    - API: `http://localhost:7216`
+    - Base de Datos: Conéctate a través de `localhost:1433` usando un cliente SQL.
+
+5. Para detener los servicios, ejecuta:
+    ```bash
+    docker-compose down
+    ```
+
+### Notas
+- Actualiza la variable de entorno `ConnectionStrings__DefaultConnection` en el servicio `api` para que coincida con la configuración de tu base de datos si es necesario.
+- Asegúrate de que los directorios `frontend` y `backend` contengan configuraciones válidas de `Dockerfile` para construir los servicios respectivos.
 # Documentation for `Untitled-1.sh` and `docker-compose.yml`
 
 ## Untitled-1.sh
